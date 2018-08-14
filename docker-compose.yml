@@ -6,7 +6,7 @@ services:
     ports:
       - '3306'
     volumes:
-      - 'data:/bitnami'
+      - './data:/bitnami'
     environment:
       - MYSQL_REPLICATION_MODE=master
       - MYSQL_REPLICATION_USER=repl_user
